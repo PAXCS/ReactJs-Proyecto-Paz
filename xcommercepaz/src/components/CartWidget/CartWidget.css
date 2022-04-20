@@ -1,0 +1,13 @@
+.carrito {
+   
+    position: absolute;
+    margin-top: -5px;
+    top: 0%;
+    right: 2%;
+    
+}
+
+.carrito:hover {
+    transform: scale(1) translate(10px, 5px );
+    cursor: pointer;
+}
