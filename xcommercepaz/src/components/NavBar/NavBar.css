@@ -4,17 +4,23 @@
     box-sizing: border-box;
 }
 
-h1 {
+.navBar-conteiner {
+    background-color: aquamarine;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.titulo {
     font-size: 60px;
     background-color: rgb(202, 93, 20);
+    border-radius: 5px;
     padding:20px;
     position: absolute;
-    margin-top: 0;
+    margin: 5px 5px;
 }
 
 ul.links {
     
-    background-color: aquamarine;
     font-size: 27px;
     list-style-type: none;
     margin-left: 150px;

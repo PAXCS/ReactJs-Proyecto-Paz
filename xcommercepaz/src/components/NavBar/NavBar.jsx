@@ -4,8 +4,8 @@ import './NavBar.css';
 
 function NavBar(props) {
     return (
-        <div>
-            <h1>XcommerC</h1>
+        <div className='navBar-conteiner'>
+            <h1 className='titulo'>XcommerC</h1>
                 <ul className='links'>
                     <a href="#">Tecnología</a>
                     <a href="#">Supermercado</a>
