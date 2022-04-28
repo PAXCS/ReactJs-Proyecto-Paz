@@ -19,7 +19,7 @@ function ItemCount ({stock, initial, onAdd}) {
 
     return (
     
-        <div className='itemCount-conteiner'>
+        <div className='itemCount-container'>
             <div className='producto'>
                 Producto
             </div>   
