@@ -21,7 +21,7 @@ function ItemCount ({stock, initial, onAdd}) {
     
         <div className='itemCount-container'>
             <div className='producto'>
-                Producto
+            
             </div>   
             <div>
                 <button className='contador' onClick={() => handleMinusButton()}> - </button>

@@ -18,13 +18,14 @@ input {
 }
 
 .itemCount-container {
-    
+
+    width: 250.5px;
     background-color: rgb(202, 93, 20);
     position: absolute;
-    left: 44%;
-    padding: 5px 5px;
+    left: -0.5%; 
+    padding: 10px 50px;
     border-radius: 5px;
-    margin-top: 5px;
+    
 
 }
 
