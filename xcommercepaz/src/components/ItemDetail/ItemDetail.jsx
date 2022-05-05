@@ -9,7 +9,7 @@ function ItemDetail({ item }) {
                 <div className='nombre-articulo'>{ item.title }</div>
                     <div className='content'>
                         <div className='img-container'>
-                            <img className='img-producto' src={item.pictureUrl} alt="Imagen del producto" />
+                            <img className='img-producto-detail' src={ item.pictureUrl} alt="Imagen del producto" />
                         </div>
                     </div>
                 <div className='precio-articulo'>{ item.price }</div>
