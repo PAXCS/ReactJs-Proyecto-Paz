@@ -1,8 +1,14 @@
 import React from "react";
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import ItemCount from "../ItemCount/ItemCount";
 import './ItemDetail.css'
 
 function ItemDetail({ item }) {
+    const [productsQuantity, setProductsQuantity] = useState(null);
+    function addHandler(quantityToAdd) {
+        setProductsQuantity (quantityToAdd); 
+    }
     return (
         <div  >
             <div className='detail-container card row col-6'>
@@ -14,8 +20,11 @@ function ItemDetail({ item }) {
                     </div>
                 <div className='precio-articulo'>{ item.price }</div>
                 
-                <div>
-                    <ItemCount initial={0} stock={5} onAdd={()=>{}}/>
+                <div className='confirmar-buttom-container'>
+                    {productsQuantity ?                
+                    <button className="button-container"><Link to ='/cart'> Comprar  {productsQuantity == 1 ? productsQuantity + ' Producto' : productsQuantity + ' Productos'}</Link></button> :
+                        <ItemCount initial={0} stock={ item.stock } onAdd={addHandler}/>
+                    }
                 </div>
                 <div className="info-articulo card " >{item.detail}</div>
             </div>

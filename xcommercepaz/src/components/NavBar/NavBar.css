@@ -4,18 +4,19 @@
     box-sizing: border-box;
 }
 
-.navBar-conteiner {
+.navBar-container {
     background-color: aquamarine;
     text-align: center;
-    padding-bottom: 10px;
+    
     
 }
 
 .titulo {
-    font-size: 60px;
+    
+    font-size: 30px;
     background-color: rgb(202, 93, 20);
     border-radius: 5px;
-    padding:30px;
+    padding:20px;
     position: absolute;
     margin: 5px 5px;
 }
@@ -25,9 +26,8 @@ ul.links {
     font-size: 27px;
     list-style-type: none;
     margin-left: 150px;
-    margin-bottom: 0px;
-    padding-top: 40px;
-    padding-bottom: 30px;   
+    padding-bottom: 20px;   
+
 }
 
 a {
@@ -38,7 +38,7 @@ a {
 }
 
 a:hover {
-    transform: scale(1) translate(10px, 5px );
+    
     color: rgba(69, 27, 27, 0.781);
        
 }

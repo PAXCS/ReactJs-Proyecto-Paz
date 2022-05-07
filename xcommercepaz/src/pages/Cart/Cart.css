@@ -1,0 +1,16 @@
+.cart {
+    font-size: x-large;
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+    border-radius: 130px;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}

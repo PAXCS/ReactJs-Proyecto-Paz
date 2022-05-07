@@ -7,7 +7,6 @@
     height: 350px;
     width: 250px;
 
-
 }
 
 .img-container {
@@ -57,4 +56,23 @@
    align-items: center;
    position: absolute;
    left: 40%;
+}
+
+.confirmar-buttom-container {
+    border-radius: 5px;
+    width: 250.5px;
+    background-color: rgb(202, 93, 20);
+    position: absolute;
+    top: 80%;
+    left: -0.5%; 
+    padding: 10px 50px;
+}
+
+.button-container {
+    display: flex;
+    padding-right: 15px;
+    margin-left: 5px;
+    width: 140px;
+    border-radius: 5px;
+    
 }

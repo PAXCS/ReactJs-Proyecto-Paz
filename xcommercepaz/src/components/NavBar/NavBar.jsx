@@ -6,12 +6,12 @@ import './NavBar.css';
 
 function NavBar(props) {
     return (
-        <div className='navBar-conteiner'>
-          <Link to={'/'}><h1 className='titulo'>XcommerC</h1></Link>  
+        <div className='navBar-container'>
+          <Link  to={'/'}><h1 className='titulo'>XcommerC</h1></Link>  
                 <ul className='links'>
-                    <NavLink to='/category/tecnologia'><a href="#">Tecnología</a></NavLink>
-                    <NavLink to='/category/supermercado'><a href="#">Supermercado</a></NavLink>
-                    <NavLink to='/category/exclusivos'><a href="#">Exclusivos</a></NavLink> 
+                    <NavLink className='categorias' to='/category/tecnologia'><a className='categorias' href="#">Tecnología</a></NavLink>
+                    <NavLink  to='/category/supermercado'><a  href="#">Supermercado</a></NavLink>
+                    <NavLink  to='/category/exclusivos'><a  href="#">Exclusivos</a></NavLink> 
                     <CartWidget/>
                 </ul>
         </div>

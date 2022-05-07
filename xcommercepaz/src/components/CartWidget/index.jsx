@@ -5,7 +5,7 @@ import cartWidget from './cartWidget.svg';
 const CartWidget = () => {
     return (
         <>
-        <img className='carrito' src={cartWidget} width="9%" alt="carrito" />
+        <img className='carrito' src={cartWidget} width="6%" alt="carrito" />
         </>
       
     )
