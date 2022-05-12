@@ -1,10 +1,62 @@
 import React from "react";
-import { useState } from 'react';
+import {useContext, useState, useEffect } from 'react';
+import CartContext from "../../context/cart-context";
 import { Link } from 'react-router-dom';
 import ItemCount from "../ItemCount/ItemCount";
 import './ItemDetail.css'
 
 function ItemDetail({ item }) {
+    const cartCtx = useContext(CartContext);
+
+    function addHandler(quantityToAdd) {
+        cartCtx.addProduct({quantity: quantityToAdd, ...item});
+    }
+
+    return (
+            <div className='detail-container card row col-6'>
+                <div className='nombre-articulo'>{ item.title }</div>
+                    <div className='content'>
+                        <div className='img-container'>
+                            <img className='img-producto-detail' src={ item.pictureUrl} alt="Imagen del producto" />
+                        </div>
+                    </div>
+                <div className='precio-articulo'>{ item.price }</div>
+                <div className='confirmar-buttom-container'>  
+                    {cartCtx.products.length ?
+                    <button className="confirmar-buttom" onClick={() => console.log(cartCtx)}>
+                        <Link to='/cart'> Comprar {cartCtx.getCartQuantity() == 1 ? ' ' + cartCtx.getCartQuantity() + ' producto' : 
+                        ' ' + cartCtx.getCartQuantity()  + ' productos'} </Link> </button> : <ItemCount initial={0} stock={item.stock} onAdd={addHandler} />} 
+                            
+                    <div className="metodos-container">
+                        <button className="metodos-compra" onClick={() => console.log(cartCtx.products)} >Imprimir carrito</button>
+                        <button className="metodos-compra" onClick={() => cartCtx.removeProduct(item.id)} >Remove product</button>
+                        <button className="metodos-compra" onClick={() => cartCtx.clear()} >Clear</button>
+                        <button className="metodos-compra" onClick={() => console.log(cartCtx.isInCart(item.id))} >Is in cart</button>
+                        <button className="quantity" onClick={() => console.log(cartCtx.getCartQuantity())} >Quantity</button>
+                    </div>  
+                </div>
+            </div>
+    )
+};
+
+export default ItemDetail
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* function ItemDetail({ item }) {
     const [productsQuantity, setProductsQuantity] = useState(null);
     function addHandler(quantityToAdd) {
         setProductsQuantity (quantityToAdd); 
@@ -33,4 +85,4 @@ function ItemDetail({ item }) {
     )   
 }
 
-export default ItemDetail
+export default ItemDetail */

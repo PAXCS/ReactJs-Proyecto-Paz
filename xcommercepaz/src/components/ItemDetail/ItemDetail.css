@@ -65,14 +65,39 @@
     position: absolute;
     top: 80%;
     left: -0.5%; 
-    padding: 10px 50px;
+    padding: 10px 50px; 
+     
+} 
+
+.confirmar-buttom {
+    border-radius: 5px;
+    display: flex;
+    padding-right: 15px;
 }
 
 .button-container {
     display: flex;
-    padding-right: 15px;
-    margin-left: 5px;
-    width: 140px;
+    /* padding-right: 15px; */
+    /* margin-left: 5px; */
+    /* width: 140px; */
     border-radius: 5px;
     
+}
+
+.metodos-container {
+    padding-top: 75px;
+    
+    
+}
+
+.metodos-compra {
+    border-radius: 5px;
+    width: 50%;
+    
+}
+
+.quantity {
+    border-radius: 5px;
+    padding-left: 42px;
+    padding-right: 42px;
 }
