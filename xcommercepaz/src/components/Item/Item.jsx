@@ -13,7 +13,7 @@ function Item ({item}) {
               <Link to={'/item/' + item?.id}> <img className='img-producto' src={item.pictureUrl} alt="Imagen del producto" /></Link>
           </div>
       </div>
-      <div className='precio-articulo'>{ item.price }</div>
+      <div className='precio-articulo'>{'$' + item.price }</div>
     </div>
     
 )

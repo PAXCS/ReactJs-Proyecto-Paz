@@ -12,7 +12,7 @@ function ItemCount ({stock, initial, onAdd}) {
 
 
     function handleMinusButton() {
-        if (count >0) {
+        if (count > initial) {
             setCount(count - 1)
         }
     }
@@ -20,9 +20,6 @@ function ItemCount ({stock, initial, onAdd}) {
     return (
     
         <div className='itemCount-container'>
-            <div className='producto'>
-            
-            </div>   
             <div>
                 <button className='contador' onClick={() => handleMinusButton()}> - </button>
                 <input readOnly value={count} />

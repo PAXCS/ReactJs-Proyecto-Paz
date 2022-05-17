@@ -1,0 +1,56 @@
+.bubble {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(131, 200, 227);
+    color: blanchedalmond;
+    width: 1rem;
+    height: 1rem;
+    padding: 12px;
+    border-radius: 50%;
+    border-color: rgba(0, 0, 0, 0.421);
+    border-style: dashed;
+    cursor: pointer;
+}
+
+
+.bubble-button:hover {
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+}
+
+.bubble-remove {
+    position: relative;
+    bottom:10%;
+    left: 85%;
+    
+}
+
+.bubble-quantity {
+    position: relative;
+    left: 85%;
+    bottom: 5%;
+}
+
+.card-cart {
+    background-color: rgb(202, 93, 20);
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin: 5px;
+    width: 20%;
+    justify-content: center;
+}
+
+.img-product-detail-cart {
+    
+    background-color: white; 
+    border-radius: 5px;
+    width: 50%;
+    object-fit: contain;
+}
+
+.info-cart {
+    align-items: center;
+}

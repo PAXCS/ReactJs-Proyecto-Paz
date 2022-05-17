@@ -13,6 +13,7 @@
     height: 200px;
     background-color: white;
     border-radius: 5px;
+    margin-bottom: 80px;
     
 }
 
@@ -27,26 +28,31 @@
     cursor: pointer;
 }
 
-.precio-articulo, .nombre-articulo {
-    font-size: 25px;
-    text-align: center;
-    padding: 5px 5px;
+.nombre-articulo {
+    font-size: 25px;  
+    
 }
 
 .precio-articulo {
-    margin-top: 20px;
+    font-size: 25px;
+    position: absolute;
+    top: 75%;
+    z-index: 5;
 }
 
 .info-articulo {
+    position: absolute;
+    top:-87%;
+    left: 100%;
     text-align: justify;
     background-color: aquamarine;
-    padding: 20px 15px;
+    padding: 25px 15px 505px;
     border-radius: 5px;
     border-color: black;
     border-style: dashed;
-    margin-top: 75PX;
+    margin-top: 304PX;
     margin-left: 20PX;
-    height: 420px;
+    height: 500px;
     width: 250px;
 }
 
@@ -63,29 +69,37 @@
     width: 250.5px;
     background-color: rgb(202, 93, 20);
     position: absolute;
-    top: 80%;
+    top: 83%;
     left: -0.5%; 
-    padding: 10px 50px; 
+    padding: 15px 65px; 
+    margin-top: 10px;
+    z-index: 5;
+    
      
 } 
 
 .confirmar-buttom {
+    background-color: rgb(236, 231, 231);
     border-radius: 5px;
+    padding-left: 15px;
     display: flex;
-    padding-right: 15px;
+    
 }
 
 .button-container {
     display: flex;
-    /* padding-right: 15px; */
-    /* margin-left: 5px; */
-    /* width: 140px; */
     border-radius: 5px;
     
 }
 
 .metodos-container {
-    padding-top: 75px;
+    background-color: rgb(202, 93, 20);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: -3px;
+    border-radius: 5px;
+    position: absolute;
+    top: 110%;
     
     
 }
@@ -98,6 +112,6 @@
 
 .quantity {
     border-radius: 5px;
-    padding-left: 42px;
-    padding-right: 42px;
+    padding-left: 79px;
+    padding-right: 79px;
 }

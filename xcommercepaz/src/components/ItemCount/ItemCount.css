@@ -22,17 +22,12 @@ input {
     width: 250.5px;
     background-color: rgb(202, 93, 20);
     position: absolute;
-    top: 10%;
-    left: 0%; 
-    margin-top: -15px;
-    padding-top: 10px;
+    top: 100%;
+    left: -0.5%; 
+    margin-left: 1px;
     padding-left: 55px;
+    padding-bottom: 10px;
     border-radius: 5px;
     
 
-}
-
-.producto {
-    margin-bottom: 5px;
-    text-align: center;
 }
