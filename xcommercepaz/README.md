@@ -4,8 +4,6 @@ La estructura del código intenta ser ser sencilla y a futuro escalable, ajustá
 
 
 
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

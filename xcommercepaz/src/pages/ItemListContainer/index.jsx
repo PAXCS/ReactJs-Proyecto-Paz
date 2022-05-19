@@ -1,24 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemList from '../../components/ItemList/ItemList';
+import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore';
 import './ItemListContainer.css';
 
 function getProducts(category) {
-  const myPromise = new Promise((resolve, reject) => {
-    const productList = [
-      {id: 1, category: 'tecnologia', title: 'Celular', price: 75000, pictureUrl: 'https://http2.mlstatic.com/D_NQ_NP_2X_966955-MLA48579050616_122021-F.webp'},
-      {id: 2, category: 'tecnologia', title: 'Notebook', price: 150000, pictureUrl:'https://http2.mlstatic.com/D_NQ_NP_908593-MLA49420869607_032022-O.webp'},
-      {id: 3, category: 'tecnologia', title: 'Tablet', price: 65000, pictureUrl:'https://http2.mlstatic.com/D_NQ_NP_2X_909806-MLA47146793018_082021-F.webp'},
-      {id: 4, category: 'tecnologia', title: 'TV', price: 120000, pictureUrl:'https://http2.mlstatic.com/D_NQ_NP_2X_974663-MLA47846000904_102021-F.webp'}
-  
-  ];
+  const db = getFirestore();
 
-  const productsFiltered = category ? productList.filter(p => p.category === category) : productList;
-  setTimeout (() => {
-    resolve(productsFiltered);
-  }, 2000);
-  });
-  return myPromise;
+  const itemsCollection = collection(db, 'items');
+
+  const q = query(
+    itemsCollection,
+  );
+
+  return getDocs(q);
   
 }
 
@@ -29,16 +24,19 @@ const ItemListContainer = ({greeting}) => {
   const {categoryId} = useParams();
 
     useEffect(() => {
-      getProducts(categoryId)
-      .then(res => {
-        setProducts(res);
+
+    getProducts(categoryId)
+      .then(snapshot => {
+        setProducts(snapshot.docs.map(doc => {
+          return { ...doc.data(), id: doc.id }
+        }));
       })
+      .catch(err => {
+        console.log(err);
+        alert('Error undefined!');
+      });
+
     }, [categoryId]);
-
-
-    /* function zonza() {
-        console.log("Agregado al carrito");
-    } */
     
     return (
         <>

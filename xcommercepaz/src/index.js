@@ -6,6 +6,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom';
 import { CartContextProvider } from './context/cart-context';
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAqkTLe-QWEpPz7cx9sk1lDaFvDF5o7rPg",
+  authDomain: "xcommercepaz.firebaseapp.com",
+  projectId: "xcommercepaz",
+  storageBucket: "xcommercepaz.appspot.com",
+  messagingSenderId: "336050128332",
+  appId: "1:336050128332:web:9ba9f321ca8ab21bbe0969"
+};
+
+initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <React.StrictMode>
