@@ -18,7 +18,7 @@ function getProducts(category) {
 }
 
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
 
   const [products, setProducts] = useState([]);
   const {categoryId} = useParams();
@@ -37,7 +37,7 @@ const ItemListContainer = ({greeting}) => {
       });
 
     }, [categoryId]);
-    
+
     return (
         <>
           <ItemList items={products}/>
@@ -46,5 +46,10 @@ const ItemListContainer = ({greeting}) => {
 
     ); 
 };
+
+ 
+  
+  
+  
 
 export default ItemListContainer;

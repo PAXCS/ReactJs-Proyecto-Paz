@@ -50,8 +50,8 @@ export const CartContextProvider = ({ children }) => {
             return total + value.price*value.quantity
         }, 0) 
     }
-    console.log(getTotalPrice);
     
+
     return (
         <CartContext.Provider value={{
             products: productList,

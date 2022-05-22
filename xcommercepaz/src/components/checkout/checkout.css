@@ -1,0 +1,55 @@
+.form-container {
+    position: absolute;
+    right: 40%;
+    width: 250px;
+    background-color: rgb(202, 93, 20);
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    
+}
+
+.input-form {
+    width: 180px;
+    margin-left: 25px;
+}
+
+.submit-button {
+    width: 150px;
+    margin-left: 40px;
+    margin-top: 5px;
+    padding-top: 5px;
+
+}
+
+.fin-compra-container {
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.fin-compra {
+    background-color: rgb(202, 93, 20);
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+
+.volver-button {
+    border-radius: 5px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.orden-number {
+    background-color: rgb(127, 255, 212);
+    border-radius: 5px;
+    padding: 8px;
+    padding-top: 5px;
+}
+
+.agradecimiento {
+    margin-top: -10px;
+    padding-bottom: 10px;
+}

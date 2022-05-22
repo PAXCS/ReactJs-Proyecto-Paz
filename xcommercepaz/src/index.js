@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom';
 import { CartContextProvider } from './context/cart-context';
 import { initializeApp } from "firebase/app";
+import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAqkTLe-QWEpPz7cx9sk1lDaFvDF5o7rPg",
@@ -17,7 +18,10 @@ const firebaseConfig = {
   appId: "1:336050128332:web:9ba9f321ca8ab21bbe0969"
 };
 
-initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+export default db;
 
 ReactDOM.render(
   <React.StrictMode>
