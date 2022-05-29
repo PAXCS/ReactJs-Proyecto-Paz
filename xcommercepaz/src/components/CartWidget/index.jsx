@@ -5,6 +5,8 @@ import Bubble from '../Bubble/Bubble';
 import './CartWidget.css';
 import cartWidget from './cartWidget.svg';
 
+//Componente para la estructura del widget del carrito
+
 const CartWidget = () => {
     const cartCtx = useContext(CartContext);
 

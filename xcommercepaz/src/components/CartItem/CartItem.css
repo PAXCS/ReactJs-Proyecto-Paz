@@ -3,8 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(131, 200, 227);
-    color: blanchedalmond;
+    background-color: aquamarine;
+    color: rgb(41, 26, 3);
     width: 1rem;
     height: 1rem;
     padding: 12px;
@@ -22,25 +22,73 @@
 }
 
 .bubble-remove {
+    border-radius: 5px;
     position: relative;
-    bottom:10%;
-    left: 85%;
+    bottom: 5%;
+    left: 4.5%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    color: rgb(41, 26, 3);
+    width: 6rem;
+    height: 1rem;
+    padding: 12px;
+    border-color: rgba(0, 0, 0, 0.421);
+    border-style: outset;
+    cursor: pointer;
     
 }
 
 .bubble-quantity {
     position: relative;
-    left: 85%;
-    bottom: 5%;
+    left: -4%;
+    bottom: 15%;
+    font-size: 18px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: aquamarine;
+    color: rgb(41, 26, 3);
+    width: 6rem;
+    height: 1rem;
+    padding: 12px;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.421);
+    border-style: outset;
+    cursor: pointer;
 }
 
 .card-cart {
-    background-color: rgb(202, 93, 20);
+    border-style: outset;
+    border-color: rgba(0, 0, 0, 0.421);
     padding: 5px 5px;
     border-radius: 5px;
     margin: 5px;
-    width: 20%;
-    justify-content: center;
+    height: 300px;
+    width: 75%;
+}
+
+.precio-articulo-cart {
+    position: relative;
+    bottom: 10%;
+    font-size: 25px;
+    padding-left: 50px;
+    
+    
+}
+
+.nombre-articulo-cart {
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+.articulo-name {
+    background-color: rgb(202, 93, 20);
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .img-product-detail-cart {
@@ -53,4 +101,22 @@
 
 .info-cart {
     align-items: center;
+}
+
+.img-container-cart {
+    position: relative;
+    padding-right: 375px;
+    right: 10%;
+    height: 100px;
+    background-color: white;
+    border-radius: 5px;
+    object-fit: contain;
+    margin-left: 100px;
+    
+}
+
+.img-producto-cart {
+    width: 25%;
+    height: 100%;
+    object-fit: contain;
 }

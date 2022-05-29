@@ -4,6 +4,7 @@ import CartItem from "../../components/CartItem/CartItem";
 import CartContext from "../../context/cart-context";
 import './Cart.css';
 
+//Contendor ubicado dentro del cart con el importe total de los productos seleccionados y el boton para terminar la compra.
 function Cart(){
     const cartCtx=useContext(CartContext);
 
@@ -19,7 +20,7 @@ function Cart(){
                         </Link>
                         
                     </div>:
-                    <div className="empty-container row col-4">
+                    <div className="empty-container row col-2">
                         <h2>No hay productos en el carrito</h2>
                         <button className='button-inicio'>
                         <Link to='/'>Ir al inicio</Link>

@@ -2,6 +2,8 @@ import React from 'react';
 import Item from '../Item/Item';
 import './ItemList.css';
 
+//Componente que devuelve la lista de productos
+
 function ItemList ({items}) {
  
     return (

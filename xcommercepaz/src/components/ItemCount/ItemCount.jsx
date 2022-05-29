@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import './ItemCount.css';
 
+//Componente con el contador de productos que se van agregando
+
 function ItemCount ({stock, initial, onAdd}) {
     const [count, setCount] = useState (initial);
 

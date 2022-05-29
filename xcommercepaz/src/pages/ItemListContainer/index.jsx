@@ -4,6 +4,9 @@ import ItemList from '../../components/ItemList/ItemList';
 import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore';
 import './ItemListContainer.css';
 
+//Página contenedora principal
+
+//Llamado a Firebase
 function getProducts(category) {
   const db = getFirestore();
 
@@ -17,7 +20,7 @@ function getProducts(category) {
   
 }
 
-
+// función con map sobre firebase para obtener los datos solicitados
 const ItemListContainer = () => {
 
   const [products, setProducts] = useState([]);
@@ -39,17 +42,16 @@ const ItemListContainer = () => {
     }, [categoryId]);
 
     return (
-        <>
-          <ItemList items={products}/>
+        <><div>
+            <ItemList items={products}/>
+        </div>
           
+          <footer className='row col-12'>
+            <div className='footer-data'> <strong>XcommercE ™️ </strong> <br className='street' /><i> Calle falsa 123 - Springfield <br className='legal' />Todos los derechos reservados </i></div>
+          </footer>
         </>
 
     ); 
 };
-
- 
-  
-  
-  
 
 export default ItemListContainer;

@@ -1,6 +1,8 @@
 import React  from 'react'
 import '../spinner/Spinner'
 
+//Loading
+
 const Spinner = () => {
 
     return (

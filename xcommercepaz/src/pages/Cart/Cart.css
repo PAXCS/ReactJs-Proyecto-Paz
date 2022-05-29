@@ -1,10 +1,11 @@
 .detail-info-container {
     border-radius: 5px;
+    border-style: double;
     background-color: rgb(202, 93, 20);
     position: absolute;
-    top:15%;
-    left: 30%;
-    padding: 15px 65px; 
+    top:20%;
+    left: 78%;
+    padding: 5px;
     margin-top: 10px;
     z-index: 5;
 }
@@ -15,6 +16,7 @@
     align-items: center;
     position: absolute;
     left: 40%;
+
  }
 
  .terminar-compra {
@@ -26,6 +28,9 @@
  }
 
  .empty-container {
+    position: absolute;
+    left: 45%;
+    text-align: center;
     background-color: rgb(202, 93, 20);
     border-radius: 5px;
  }

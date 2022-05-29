@@ -6,12 +6,11 @@ import {Routes, Route } from 'react-router-dom';
 import Checkout from './components/checkout/checkout.jsx';
 
 
-
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <Routes>
+      <Routes>        
         <Route path='/' element={<ItemListContainer/>}/>
         <Route path='/cart' element={<Cart/>} />
         <Route path='/category/:categoryId' element={<ItemListContainer/>}/>

@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import ItemCount from "../ItemCount/ItemCount";
 import './ItemDetail.css'
 
+//Componente que nos trae producto individualmente con el detalle de cada uno
+
 function ItemDetail({ item }) {
     const cartCtx = useContext(CartContext);
 
@@ -32,6 +34,9 @@ function ItemDetail({ item }) {
                    <ItemCount initial={1} stock={item.stock} onAdd={addHandler} />}      
                     
                 </div>
+
+                {/* Botonera con los metodos aplicados */}
+
                 <div className="metodos-container">
                         <button className="metodos-compra" onClick={() => console.log(cartCtx.products)} >Imprimir carrito</button>
                         <button className="metodos-compra" onClick={() => cartCtx.removeProduct(item.id)} >Remove product</button>

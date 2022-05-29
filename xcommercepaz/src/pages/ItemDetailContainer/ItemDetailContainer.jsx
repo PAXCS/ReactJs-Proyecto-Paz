@@ -4,6 +4,9 @@ import { doc, getDoc, getFirestore } from 'firebase/firestore'
 import ItemDetail from '../../components/ItemDetail/ItemDetail';
 import './ItemDetailContainer.css';
 
+//Página con los detalles del producto
+
+//Llamado a firebase
 function getItem(id) {
    const db = getFirestore();
 
@@ -13,6 +16,7 @@ function getItem(id) {
 
 }
 
+//map para traer los datos solicitados
 function ItemDetailContainer() {
     const [item, setItem] = useState({});
     const { id } = useParams();

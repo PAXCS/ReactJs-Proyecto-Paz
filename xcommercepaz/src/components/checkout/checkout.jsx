@@ -6,11 +6,12 @@ import db from '../..';
 import CartContext from '../../context/cart-context';
 import './checkout.css';
 
+//Componente con los metdos y funciones aplicados necesarios para la finalización de la compra
 
 const Checkout = () => {
-    // { buyer: { name, phone, email }, items: [{ id, title, price, amount }], date, total }
+    
 
-    const {products,getCartQuantity,getTotalPrice, clear}= useContext(CartContext)
+    const {products,getTotalPrice, clear}= useContext(CartContext)
 
     const [load, setLoad] = useState(false)
     const [orderID, setOrderID] = useState()
@@ -117,7 +118,12 @@ const Checkout = () => {
             }
             </div>
 
-        </>
+       
+          
+          <footer className='row col-12'>
+            <div className='footer-data'> <strong>XcommercE ™️ </strong> <br className='street' /><i> Calle falsa 123 - Springfield <br className='legal' />Todos los derechos reservados </i></div>
+          </footer>
+          </>
     )
 }
 
